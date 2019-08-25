@@ -1,14 +1,14 @@
 # libdaq pkg-config file
 
-prefix=@prefix@
-exec_prefix=@exec_prefix@
-libdir=@libdir@
-includedir=@includedir@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=@CMAKE_INSTALL_BINDIR@
+libdir=@CMAKE_INSTALL_LIBDIR@
+includedir=@CMAKE_INSTALL_INCLUDEDIR@
 
 Name: libdaq
 Description: Data AcQuisition library
 URL: https://snort.org/downloads
-Version: @VERSION@
+Version: @DAQ_VERSION_STR@
 Requires:
 Conflicts:
 Libs: -L${libdir} -ldaq
